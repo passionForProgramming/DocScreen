@@ -1,1 +1,2 @@
 c:\users\bryan\documents\visual studio 2012\Projects\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe.config
+C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe.config

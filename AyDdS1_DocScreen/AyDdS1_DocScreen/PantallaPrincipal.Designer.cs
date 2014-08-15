@@ -1,6 +1,6 @@
 ﻿namespace AyDdS1_DocScreen
 {
-    partial class Form1
+    partial class PantallaPrincipal
     {
         /// <summary>
         /// Required designer variable.
