@@ -41,11 +41,11 @@ namespace AyDdS1_DocScreen
             int cantidad = (int) Decimal.Round(numCACantidad.Value, 0);
             int intervalo = (int) Decimal.Round(numCAIntervalo.Value * 1000, 0);
             int retardo = (int) Decimal.Round(numCARetardo.Value*1000, 0);
-            //retardo
-            Thread.Sleep( retardo );
             //minimiza la ventana
             //this.WindowState = FormWindowState.Minimized;
             this.Hide();
+            //retardo
+            Thread.Sleep(retardo + 500);
             //hasta que cumpla la cantidad
             for (int i = 0; i < cantidad; i++){
                 //arma el nombre de archivo

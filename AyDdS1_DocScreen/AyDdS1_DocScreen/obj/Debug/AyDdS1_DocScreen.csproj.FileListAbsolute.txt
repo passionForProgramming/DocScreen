@@ -7,3 +7,4 @@ C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csproj.GenerateResource.Cache
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.exe
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.pdb
+C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csprojResolveAssemblyReference.cache
