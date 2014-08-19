@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numCACantidad = new System.Windows.Forms.NumericUpDown();
+            this.numCAIntervalo = new System.Windows.Forms.NumericUpDown();
+            this.numCARetardo = new System.Windows.Forms.NumericUpDown();
             this.btnCAIniciar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numCMRetardo = new System.Windows.Forms.NumericUpDown();
             this.btnCMTomar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.numCARetardo = new System.Windows.Forms.NumericUpDown();
-            this.numCMRetardo = new System.Windows.Forms.NumericUpDown();
-            this.numCAIntervalo = new System.Windows.Forms.NumericUpDown();
-            this.numCACantidad = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCARetardo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCMRetardo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCAIntervalo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCACantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCAIntervalo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCARetardo)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCMRetardo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -63,6 +63,53 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Captura Automática";
+            // 
+            // numCACantidad
+            // 
+            this.numCACantidad.Location = new System.Drawing.Point(21, 44);
+            this.numCACantidad.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numCACantidad.Name = "numCACantidad";
+            this.numCACantidad.Size = new System.Drawing.Size(84, 20);
+            this.numCACantidad.TabIndex = 9;
+            this.numCACantidad.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // numCAIntervalo
+            // 
+            this.numCAIntervalo.Location = new System.Drawing.Point(114, 45);
+            this.numCAIntervalo.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numCAIntervalo.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.numCAIntervalo.Name = "numCAIntervalo";
+            this.numCAIntervalo.Size = new System.Drawing.Size(100, 20);
+            this.numCAIntervalo.TabIndex = 8;
+            this.numCAIntervalo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numCARetardo
+            // 
+            this.numCARetardo.Location = new System.Drawing.Point(21, 102);
+            this.numCARetardo.Name = "numCARetardo";
+            this.numCARetardo.Size = new System.Drawing.Size(100, 20);
+            this.numCARetardo.TabIndex = 7;
+            this.numCARetardo.ValueChanged += new System.EventHandler(this.numCARetardo_ValueChanged);
             // 
             // btnCAIniciar
             // 
@@ -113,6 +160,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Captura Manual";
             // 
+            // numCMRetardo
+            // 
+            this.numCMRetardo.Location = new System.Drawing.Point(17, 47);
+            this.numCMRetardo.Name = "numCMRetardo";
+            this.numCMRetardo.Size = new System.Drawing.Size(100, 20);
+            this.numCMRetardo.TabIndex = 3;
+            // 
             // btnCMTomar
             // 
             this.btnCMTomar.Location = new System.Drawing.Point(135, 45);
@@ -131,70 +185,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Retardo de Inicio";
             // 
-            // numCARetardo
-            // 
-            this.numCARetardo.Location = new System.Drawing.Point(21, 102);
-            this.numCARetardo.Name = "numCARetardo";
-            this.numCARetardo.Size = new System.Drawing.Size(100, 20);
-            this.numCARetardo.TabIndex = 7;
-            this.numCARetardo.ValueChanged += new System.EventHandler(this.numCARetardo_ValueChanged);
-            // 
-            // numCMRetardo
-            // 
-            this.numCMRetardo.Location = new System.Drawing.Point(17, 47);
-            this.numCMRetardo.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numCMRetardo.Name = "numCMRetardo";
-            this.numCMRetardo.Size = new System.Drawing.Size(100, 20);
-            this.numCMRetardo.TabIndex = 3;
-            this.numCMRetardo.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // numCAIntervalo
-            // 
-            this.numCAIntervalo.Location = new System.Drawing.Point(114, 45);
-            this.numCAIntervalo.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numCAIntervalo.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numCAIntervalo.Name = "numCAIntervalo";
-            this.numCAIntervalo.Size = new System.Drawing.Size(100, 20);
-            this.numCAIntervalo.TabIndex = 8;
-            this.numCAIntervalo.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numCACantidad
-            // 
-            this.numCACantidad.Location = new System.Drawing.Point(21, 44);
-            this.numCACantidad.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numCACantidad.Name = "numCACantidad";
-            this.numCACantidad.Size = new System.Drawing.Size(84, 20);
-            this.numCACantidad.TabIndex = 9;
-            this.numCACantidad.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,12 +196,12 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCACantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCAIntervalo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCARetardo)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCARetardo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCMRetardo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCAIntervalo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCACantidad)).EndInit();
             this.ResumeLayout(false);
 
         }
