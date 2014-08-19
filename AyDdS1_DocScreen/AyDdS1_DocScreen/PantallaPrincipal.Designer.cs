@@ -134,19 +134,9 @@
             // numCARetardo
             // 
             this.numCARetardo.Location = new System.Drawing.Point(21, 102);
-            this.numCARetardo.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.numCARetardo.Name = "numCARetardo";
             this.numCARetardo.Size = new System.Drawing.Size(100, 20);
             this.numCARetardo.TabIndex = 7;
-            this.numCARetardo.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
             this.numCARetardo.ValueChanged += new System.EventHandler(this.numCARetardo_ValueChanged);
             // 
             // numCMRetardo
