@@ -9,17 +9,24 @@ namespace AyDdS1_DocScreen
     class RegistroScreen
     {
         //atributos
-        string nombre;
-        string descripcion;
-        string path;
+        public string nombreArchivo, path;
+        public string nombre, descripcion;
 
         //constructor
         public RegistroScreen()
         {
-            //inicializa variables
+            nombreArchivo = "";
+            path = "";
             nombre = "";
             descripcion = "";
-            path = "";
+        }
+        public RegistroScreen(string nombreArchivo, string path)
+        {
+            //inicializa variables
+            this.nombreArchivo = nombreArchivo;
+            this.path = path;
+            nombre = "";
+            this.descripcion = "";
         }
     }
 }

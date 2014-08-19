@@ -15,7 +15,8 @@ namespace AyDdS1_DocScreen
     public partial class PantallaPrincipal : Form
     {
         //atributos
-        string pathProyecto;
+        string titulo = "DocScreen";
+        string pathProyecto = "C:\\AyDdS1\\Screenshots\\";
         List<RegistroScreen> listaScreens;
         int cantidadScreens;
 
@@ -25,9 +26,11 @@ namespace AyDdS1_DocScreen
             InitializeComponent();
 
             //inicializacion
-            pathProyecto = "C:\\AyDdS1\\Screenshots\\";
             listaScreens = new List<RegistroScreen>();
             cantidadScreens = 0;
+
+            //configuracion
+            this.Text = titulo;
         }
 
         /*CAPTURAS AUTOMATICAS*/
@@ -44,21 +47,25 @@ namespace AyDdS1_DocScreen
             this.WindowState = FormWindowState.Minimized;
             //hasta que cumpla la cantidad
             for (int i = 0; i < cantidad; i++){
-                //arma el nombre
-                string nombreAbsoluto = String.Format("{0}{1}{2}.{3}", pathProyecto, "scr", ++cantidadScreens, ".png");
+                //arma el nombre de archivo
+                string nombreArchivo = String.Format("{0}{1}.{2}", "scr", ++cantidadScreens, "png");
+                //string nombreArchivo = String.Format("{0}{1}", "scr", ++cantidadScreens);
                 //toma captura
-                capturar(nombreAbsoluto);
+                capturar(nombreArchivo, pathProyecto);
                 //retardo si no es la ultima
                 if (i<cantidad-1){
                     Thread.Sleep(intervalo);
                 }
             }
-            //regresar la pantalla
+            //regresar la ventana
             this.WindowState = FormWindowState.Normal;
+            //muestar mensaje
+            MessageBox.Show("Capturas tomadas con exito", titulo, 
+                MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         //toma captura
-        private void capturar( string pathGuardado ){
+        private RegistroScreen capturar( string nombreArchivo, string pathGuardado ){
             //crea un objeto para poner limites
             Rectangle bounds = this.Bounds;
             //crea una imagen
@@ -67,10 +74,16 @@ namespace AyDdS1_DocScreen
                     //toma la captura
                     g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
                 }
+                //arma el nombre absoluto
+                string nombreAbsoluto = String.Format("{0}{1}", pathGuardado, nombreArchivo);
                 //guarda el archivo
-                //bitmap.Save("C:\\AyDdS1\\Screenshots\\btn2.png", ImageFormat.Jpeg);
-                bitmap.Save(pathGuardado, ImageFormat.Png);
+                bitmap.Save(nombreAbsoluto, ImageFormat.Png);
             }
+            //crea objeto de registro
+            RegistroScreen rs = new RegistroScreen(nombreArchivo, pathGuardado);
+            //lo añade a la lista del proyecto
+            listaScreens.Add(rs);
+            return rs;
         }
 
         /*CAPTURAS MANUALES*/
