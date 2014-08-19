@@ -28,5 +28,15 @@ namespace AyDdS1_DocScreen
             nombre = "";
             this.descripcion = "";
         }
+        
+        public RegistroScreen(string nombreArchivo, string path, string nombre, string descripcion)
+        {
+            //inicializa variables
+            this.nombreArchivo = nombreArchivo;
+            this.path = path;
+            this.nombre = nombre;
+            this.descripcion = descripcion;
+        }
+
     }
 }

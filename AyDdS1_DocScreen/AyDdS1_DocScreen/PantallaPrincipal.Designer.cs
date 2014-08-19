@@ -166,6 +166,7 @@
             this.numCMRetardo.Name = "numCMRetardo";
             this.numCMRetardo.Size = new System.Drawing.Size(100, 20);
             this.numCMRetardo.TabIndex = 3;
+            this.numCMRetardo.ValueChanged += new System.EventHandler(this.numCMRetardo_ValueChanged);
             // 
             // btnCMTomar
             // 
@@ -175,6 +176,7 @@
             this.btnCMTomar.TabIndex = 2;
             this.btnCMTomar.Text = "Tomar";
             this.btnCMTomar.UseVisualStyleBackColor = true;
+            this.btnCMTomar.Click += new System.EventHandler(this.btnCMTomar_Click);
             // 
             // label4
             // 
@@ -204,6 +206,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCMRetardo)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void numCARetardo_ValueChanged(object sender, System.EventArgs e)
+        {
+            //throw new System.NotImplementedException();
+        }
+
+        private void numCMRetardo_ValueChanged(object sender, System.EventArgs e)
+        {
+            //throw new System.NotImplementedException();
         }
 
         #endregion
