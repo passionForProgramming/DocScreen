@@ -44,7 +44,8 @@ namespace AyDdS1_DocScreen
             //retardo
             Thread.Sleep( retardo );
             //minimiza la ventana
-            this.WindowState = FormWindowState.Minimized;
+            //this.WindowState = FormWindowState.Minimized;
+            this.Hide();
             //hasta que cumpla la cantidad
             for (int i = 0; i < cantidad; i++){
                 //arma el nombre de archivo
@@ -58,7 +59,8 @@ namespace AyDdS1_DocScreen
                 }
             }
             //regresar la ventana
-            this.WindowState = FormWindowState.Normal;
+            //his.WindowState = FormWindowState.Normal;
+            this.Show();
             //muestar mensaje
             MessageBox.Show("Capturas tomadas con exito", titulo, 
                 MessageBoxButtons.OK, MessageBoxIcon.None);
