@@ -91,8 +91,9 @@ namespace AyDdS1_DocScreen
         /*CAPTURAS MANUALES*/
         private void numCARetardo_ValueChanged(object sender, EventArgs e)
         {
-
+            //prueba
         }
+
 
 
     }
