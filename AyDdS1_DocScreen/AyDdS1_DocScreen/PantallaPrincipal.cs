@@ -17,6 +17,20 @@ namespace AyDdS1_DocScreen
             InitializeComponent();
         }
 
+        private void btnCAIniciar_Click(object sender, EventArgs e)
+        {
+            //toma valores
+            int cantidad = (int) Decimal.Round(numCACantidad.Value, 0);
+            int intervalo = (int) Decimal.Round(numCAIntervalo.Value * 1000, 0);
+            int retardo = (int) Decimal.Round(numCARetardo.Value, 0);
+
+        }
+
+        private void numCARetardo_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }
