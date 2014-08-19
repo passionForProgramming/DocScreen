@@ -7,4 +7,10 @@ C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csproj.GenerateResource.Cache
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.exe
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.pdb
+<<<<<<< HEAD
 C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csprojResolveAssemblyReference.cache
+=======
+C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe.config
+C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.exe
+C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.pdb
+>>>>>>> origin/master
