@@ -92,7 +92,6 @@ namespace AyDdS1_DocScreen
         private void numCARetardo_ValueChanged(object sender, EventArgs e)
         {
             //prueba
-            //prueba 2
         }
 
 
