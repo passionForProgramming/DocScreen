@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTituloCM = new System.Windows.Forms.TextBox();
             this.txtDescripcionCM = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCMDescGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,22 +69,23 @@
             this.txtDescripcionCM.Size = new System.Drawing.Size(371, 109);
             this.txtDescripcionCM.TabIndex = 3;
             // 
-            // button1
+            // btnCMDescGuardar
             // 
-            this.button1.Location = new System.Drawing.Point(161, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(268, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCMDescGuardar.Location = new System.Drawing.Point(106, 173);
+            this.btnCMDescGuardar.Name = "btnCMDescGuardar";
+            this.btnCMDescGuardar.Size = new System.Drawing.Size(371, 29);
+            this.btnCMDescGuardar.TabIndex = 4;
+            this.btnCMDescGuardar.Text = "Guardar";
+            this.btnCMDescGuardar.UseVisualStyleBackColor = true;
+            this.btnCMDescGuardar.Click += new System.EventHandler(this.btnCMDescGuardar_Click);
             // 
             // DescripcionCM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 214);
-            this.Controls.Add(this.button1);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnCMDescGuardar);
             this.Controls.Add(this.txtDescripcionCM);
             this.Controls.Add(this.txtTituloCM);
             this.Controls.Add(this.label2);
@@ -107,6 +108,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTituloCM;
         private System.Windows.Forms.TextBox txtDescripcionCM;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCMDescGuardar;
     }
 }

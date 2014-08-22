@@ -15,17 +15,25 @@ namespace AyDdS1_DocScreen
         PantallaPrincipal pantalla;
         public DescripcionCM(PantallaPrincipal pantalla)
         {
+            //default
             InitializeComponent();
+            CenterToParent();
+            Show();
+            
+            //toma referencia de pantalla principal
             this.pantalla = pantalla;
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCMDescGuardar_Click(object sender, EventArgs e)
         {
+            //oculta la pantalla
             this.Hide();
-            pantalla.setInfo(txtTituloCM.Text, txtDescripcionCM.Text);
+            //guarda informacion
+            pantalla.setInfoCM(txtTituloCM.Text, txtDescripcionCM.Text);
+            //muestra la pantalla principal
             pantalla.Show();
-
+            //libera memoria
+            Dispose();
         }
 
     }

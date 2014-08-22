@@ -27,10 +27,12 @@ namespace AyDdS1_DocScreen
         public PantallaPrincipal(){
             //default
             InitializeComponent();
+            CenterToScreen();
 
             //inicializacion
             listaScreens = new List<RegistroScreen>();
             cantidadScreens = 0;
+            screenManual = null;
 
             //configuracion
             this.Text = titulo;
@@ -99,7 +101,7 @@ namespace AyDdS1_DocScreen
             return rs;
         }
 
-        private RegistroScreen capturaManual(string nombreArchivo, string pathGuardado)
+        /*private RegistroScreen capturaManual(string nombreArchivo, string pathGuardado)
         {
             //crea un objeto para poner limites
             //Rectangle bounds = this.Bounds;
@@ -126,7 +128,7 @@ namespace AyDdS1_DocScreen
             //lo añade a la lista del proyecto
             //listaScreens.Add(rs);
             return rs;
-        }
+        }*/
 
         //permite obtener la posicion de una ventana
         [DllImport("user32.dll")]
@@ -170,40 +172,40 @@ namespace AyDdS1_DocScreen
 
         private void btnCMTomar_Click(object sender, EventArgs e)
         {
+            //tomar valores
             int retardo = (int)Decimal.Round(numCMRetardo.Value * 1000, 0);
+            //oculta la ventana
             this.Hide();
             //retardo
             Thread.Sleep(retardo + 500);
-                 //arma el nombre de archivo
+            //arma el nombre de archivo
             string nombreArchivo = String.Format("{0}{1}.{2}", "scr", ++cantidadScreens, "png");
-                //toma captura
-            screenManual = capturaManual(nombreArchivo, pathProyecto);
-                //retardo si no es la ultima
-            //this.Show();
-            //muestar mensaje
+            //toma captura
+            screenManual = capturar(nombreArchivo, pathProyecto);
+            //pide informacion
             DescripcionCM descripcion = new DescripcionCM(this);
-            descripcion.Show();
         }
 
-        public void setInfo(String titulo, String descripcion) {
+        //establece informacion de captura
+        public void setInfoCM( String titulo, String descripcion ) {
+            //asigna inforamacion
             screenManual.nombre = titulo;
             screenManual.descripcion = descripcion;
-            listaScreens.Add(screenManual);
+            //listaScreens.Add( screenManual );
+            //prueba
             recorrerLista();
+            //borra referencia
+            screenManual = null;
         }
 
+        //prueba para mostrar la lista
         public void recorrerLista() {
             for (int i = 0; i < listaScreens.Count(); i++) {
                 MessageBox.Show(listaScreens.ElementAt(i).nombre, "Titulo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBoxButtons.OK, MessageBoxIcon.None);
                 Debug.WriteLine(listaScreens.ElementAt(i).nombre);
             }
         }
-
-
-
-
-
 
     }
 }

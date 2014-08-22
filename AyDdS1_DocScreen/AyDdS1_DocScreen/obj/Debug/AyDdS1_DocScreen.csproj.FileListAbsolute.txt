@@ -18,3 +18,4 @@ C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\
 C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe
 C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.pdb
 C:\Users\ana lucia\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.DescripcionCM.resources
+C:\Users\bryan\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.DescripcionCM.resources
