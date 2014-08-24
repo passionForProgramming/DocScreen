@@ -36,6 +36,26 @@ namespace AyDdS1_DocScreen
 
             //configuracion
             this.Text = titulo;
+            /***************************PRUBAS UNITARIAS****************************/
+            
+            this.Show();
+            //damos tiempo para que se muestre la ventana
+            Thread.Sleep(4000);
+            //corremos las pruebas unitarias
+            PruebasUnitarias test = new PruebasUnitarias(this);
+            test.verificarPantallazos();
+            
+
+            /***************************FIN PRUEBAS UNITARIAS*******************************************/
+
+
+        }
+
+        public List<RegistroScreen> getListaScreens()
+        {
+
+            return listaScreens;
+
         }
 
         /*CAPTURAS AUTOMATICAS*/
@@ -43,24 +63,31 @@ namespace AyDdS1_DocScreen
         //boton iniciar
         private void btnCAIniciar_Click(object sender, EventArgs e)
         {
-            //toma valores
-            int cantidad = (int) Decimal.Round(numCACantidad.Value, 0);
-            int intervalo = (int) Decimal.Round(numCAIntervalo.Value * 1000, 0);
-            int retardo = (int) Decimal.Round(numCARetardo.Value*1000, 0);
+            int cantidad = (int)Decimal.Round(numCACantidad.Value, 0);
+            int intervalo = (int)Decimal.Round(numCAIntervalo.Value * 1000, 0);
+            int retardo = (int)Decimal.Round(numCARetardo.Value * 1000, 0);
+            iniciar(cantidad, intervalo, retardo);
+        }
+
+        public void iniciar(int cantidad, int intervalo, int retardo)
+        {
+
             //minimiza la ventana
             //this.WindowState = FormWindowState.Minimized;
             this.Hide();
             //retardo
             Thread.Sleep(retardo + 500);
             //hasta que cumpla la cantidad
-            for (int i = 0; i < cantidad; i++){
+            for (int i = 0; i < cantidad; i++)
+            {
                 //arma el nombre de archivo
                 string nombreArchivo = String.Format("{0}{1}.{2}", "scr", ++cantidadScreens, "png");
                 //string nombreArchivo = String.Format("{0}{1}", "scr", ++cantidadScreens);
                 //toma captura
                 capturar(nombreArchivo, pathProyecto);
                 //retardo si no es la ultima
-                if (i<cantidad-1){
+                if (i < cantidad - 1)
+                {
                     Thread.Sleep(intervalo);
                 }
             }
@@ -68,8 +95,10 @@ namespace AyDdS1_DocScreen
             //his.WindowState = FormWindowState.Normal;
             this.Show();
             //muestar mensaje
-            MessageBox.Show("Capturas tomadas con exito", titulo, 
+            MessageBox.Show("Capturas tomadas con exito", titulo,
                 MessageBoxButtons.OK, MessageBoxIcon.None);
+
+        
         }
 
         /*TOMAR CAPTURA*/

@@ -29,3 +29,16 @@ C:\Users\gps\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\De
 C:\Users\gps\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.PantallaPrincipal.resources
 C:\Users\gps\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.Properties.Resources.resources
 C:\Users\gps\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csproj.GenerateResource.Cache
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe.config
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.exe
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.pdb
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.exe
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\AyDdS1_DocScreen.pdb
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\nunit.framework.dll
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\nunit.mocks.dll
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\bin\Debug\nunit.framework.xml
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csprojResolveAssemblyReference.cache
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.DescripcionCM.resources
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.PantallaPrincipal.resources
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.Properties.Resources.resources
+C:\Users\Victor\Documents\GitHub\DocScreen\AyDdS1_DocScreen\AyDdS1_DocScreen\obj\Debug\AyDdS1_DocScreen.csproj.GenerateResource.Cache

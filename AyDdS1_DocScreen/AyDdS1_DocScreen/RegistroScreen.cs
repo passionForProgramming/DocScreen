@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AyDdS1_DocScreen
 {
-    class RegistroScreen
+    public class RegistroScreen
     {
         //atributos
         public string nombreArchivo, path;
@@ -36,6 +36,16 @@ namespace AyDdS1_DocScreen
             this.path = path;
             this.nombre = nombre;
             this.descripcion = descripcion;
+        }
+
+        public string getPath()
+        {
+            return path;
+        }
+
+        public string getNombreArchivo() 
+        {
+            return nombreArchivo;
         }
 
     }
