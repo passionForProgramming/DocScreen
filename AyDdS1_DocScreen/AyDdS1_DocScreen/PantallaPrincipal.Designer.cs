@@ -195,7 +195,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "PantallaPrincipal";
-            this.Text = "Form1";
+            this.Text = "DocScreen";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCACantidad)).EndInit();
