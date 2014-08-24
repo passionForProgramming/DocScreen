@@ -37,7 +37,7 @@ namespace AyDdS1_DocScreen
             //configuracion
             this.Text = titulo;
             /***************************PRUBAS UNITARIAS****************************/
-            
+            /*
             this.Show();
             //damos tiempo para que se muestre la ventana
             Thread.Sleep(4000);
@@ -45,6 +45,7 @@ namespace AyDdS1_DocScreen
             PruebasUnitarias test = new PruebasUnitarias(this);
             test.verificarPantallazos();
             
+            */
 
             /***************************FIN PRUEBAS UNITARIAS*******************************************/
 
